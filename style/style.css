@@ -1,0 +1,42 @@
+
+.container span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container img{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page__row{
+    display:block;
+}
+
+.page__row2{
+    width: 100%;
+    display: block;
+    align-content: center;
+
+}
+
+#list{
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+#list a {
+    text-decoration: none;
+    color: #1c63e0;
+}
+
+#map{
+    height: 100%;
+    display: inline-block;
+    horiz-align: center;
+
+}
+
