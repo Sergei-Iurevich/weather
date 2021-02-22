@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,12 @@
     "@babel/preset-env": "^7.12.17",
     "@types/jest": "^26.0.20",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3",
+    "prettier": "2.2.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
