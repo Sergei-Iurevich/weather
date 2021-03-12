@@ -30,9 +30,10 @@ export async function weather(el) {
   }
 
   function drawMap(element, city) {
+    const cityName = city.split(" ").join("+");
     const url =
       `https://maps.googleapis.com/maps/api/staticmap?center=` +
-      `${city}&size=500x500&key=${mapKey}`;
+      `${cityName}&size=500x500&key=${mapKey}`;
     element.innerHTML = `<img src=${url}>`;
   }
 
@@ -42,7 +43,6 @@ export async function weather(el) {
         return `<li><a href="#">${item}</a></li>`;
       })
       .join("");
-
     element.innerHTML = `<ol>${list}</ol>`;
   }
 

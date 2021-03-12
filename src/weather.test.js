@@ -46,7 +46,7 @@ describe("app weather testing", () => {
               }),
           });
         }
-        return new Error("error: do not city");
+        return new Error("404: city not found");
       }
       if (regexpGeo.test(url)) {
         return Promise.resolve({
@@ -56,7 +56,7 @@ describe("app weather testing", () => {
             }),
         });
       }
-      return new Error("error: wrong url");
+      return new Error("404");
     });
 
     function submitForm(strValue) {
@@ -110,7 +110,6 @@ describe("app weather testing", () => {
         "^https://maps\\.googleapis\\.com\\/maps\\/a" +
         "pi\\/staticmap\\?center=\\w+&size=500x500&key=";
       const regexp = new RegExp(strGoogleMap, "i");
-      // const regexp = /^https:\/\/maps\.googleapis\.com\/maps\/api\/staticmap\?center=\w+&size=500x500&key=/i;
       const regexpCity = /Moscow/i;
       expect(regexp.test(img.src)).toBeTruthy();
       expect(regexpCity.test(img.src)).toBeTruthy();
