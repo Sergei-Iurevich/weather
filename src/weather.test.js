@@ -1,8 +1,4 @@
 import { weather } from "./weather";
-import { getCity } from "./getCity";
-import { getWeather } from "./getWeather";
-import { readList } from "./readList";
-import { saveList } from "./saveList";
 import "regenerator-runtime/runtime";
 
 describe("app weather testing", () => {
@@ -134,34 +130,6 @@ describe("app weather testing", () => {
       expect(ol).toBeTruthy();
       expect(li).toBeTruthy();
       expect(li.length).toBe(10);
-    });
-  });
-
-  describe("testing function: getCity, getWeather,readList, saveList", () => {
-    it("testing getCity, should show the name city", async () => {
-      const name = await getCity();
-      expect(name).toBe("Moscow");
-    });
-
-    it("getWeather, should show the name city", async () => {
-      const data = {
-        name: "London",
-        main: { temp: 10 },
-        weather: [{ icon: "d03" }],
-      };
-      expect(await getWeather("London")).toEqual(data);
-    });
-
-    it("testing function saveList", () => {
-      saveList(["London", "Paris"]);
-      const data = JSON.parse(localStorage.getItem("items")) || [];
-      expect(data).toEqual(["London", "Paris"]);
-    });
-
-    it("testing function readList", async () => {
-      localStorage.setItem("items", JSON.stringify(["London", "Paris"]));
-      const data = await readList();
-      expect(data).toEqual(["London", "Paris"]);
     });
   });
 });
