@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/Sergei-Iurevich/weather/branch/master/graph/badge.svg?token=KCZZBDZQD2)](https://codecov.io/gh/Sergei-Iurevich/weather)
+
 # App "Weather"
 
 Цель: В задании тренируются навыки:
