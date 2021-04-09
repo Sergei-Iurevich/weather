@@ -1,6 +1,11 @@
 export async function getCity() {
-  const url = "https://get.geojs.io/v1/ip/geo.json";
-  const response = await fetch(url);
-  const objJSON = await response.json();
+  let objJSON;
+  try {
+    const url = "https://get.geojs.io/v1/ip/geo.json";
+    const response = await fetch(url);
+    objJSON = await response.json();
+  } catch (e) {
+    throw new Error("error getCity");
+  }
   return objJSON.city;
 }
