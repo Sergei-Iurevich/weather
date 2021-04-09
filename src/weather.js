@@ -10,21 +10,6 @@ export async function weather(elem) {
   const el = elem;
   const MAP_KEY = "AIzaSyDANLeEnr2Wf05hG0wxHA0Ucqz5CeZF_Cw";
   const APP_ID = "6483f07f86904206d5977c6c6ae4e4e1";
-
-  el.innerHTML = `<div class="divForWeather"> </div>
-                        <form>
-                            <input
-                                    id="userInput"
-                                    placeholder="Type and press enter"
-                                    required
-                                    autofocus
-                            />
-                            <button>Add item</button>
-                        </form>
-                        <div class="list"></div>
-                        <div class="map"></div>
-                        `;
-
   const divForWeather = el.querySelector(".divForWeather");
   const map = el.querySelector(".map");
   const form = el.querySelector("form");
