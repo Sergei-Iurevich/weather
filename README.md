@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/Sergei-Iurevich/weather/branch/master/graph/badge.svg?token=KCZZBDZQD2)](https://codecov.io/gh/Sergei-Iurevich/weather)
+[![codecov](https://codecov.io/gh/Sergei-Iurevich/weather/branch/dev/graph/badge.svg?token=KCZZBDZQD2)](https://codecov.io/gh/Sergei-Iurevich/weather)
 
 # App "Weather"
 
