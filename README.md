@@ -1,4 +1,5 @@
 [![codecov](https://codecov.io/gh/Sergei-Iurevich/weather/branch/dev/graph/badge.svg?token=KCZZBDZQD2)](https://codecov.io/gh/Sergei-Iurevich/weather)
+![](https://github.com/Sergei-Iurevich/weather/actions/workflows/sanity-check.yml/badge.svg)
 
 # App "Weather"
 
